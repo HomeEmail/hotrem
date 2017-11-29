@@ -1,0 +1,23 @@
+{
+  "name": "hotrem",
+  "version": "1.0.0",
+  "description": "how to use rem on webapp",
+  "main": "hotrem.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HomeEmail/hotrem.git"
+  },
+  "keywords": [
+    "rem",
+    "webapp"
+  ],
+  "author": "HomeEmail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HomeEmail/hotrem/issues"
+  },
+  "homepage": "https://github.com/HomeEmail/hotrem#readme"
+}
