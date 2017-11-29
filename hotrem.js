@@ -16,7 +16,9 @@
             hotremEl = document.querySelector('meta[name="hotrem"]'),
             dpr = window.devicePixelRatio || 1,
             maxWidth = 540,
-            designWidth = 0;
+            designWidth = 640,
+            rootFontSize = 40
+        ;
 
         dpr = dpr >= 3 ? 3 : ( dpr >=2 ? 2 : 1 );
 
