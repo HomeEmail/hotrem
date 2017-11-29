@@ -14,3 +14,6 @@ yarn add hotrem
 
 ```
 
+
+或者手动复制hotrem.js到你项目里引用
+
