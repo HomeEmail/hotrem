@@ -1,6 +1,6 @@
 (function(){ //window,document
 
-    'use strict';
+    //'use strict';
 
     //注意：这个js默认使用的是基准屏幕宽度为640px,font-size为40px的标准下进行适配其他屏幕尺寸的
 
@@ -96,15 +96,15 @@
         //对，这个就是核心方法了，给HTML设置font-size。
         var innerWidth = document.documentElement.getBoundingClientRect().width || window.innerWidth;
 
-        if( this.maxWidth && (innerWidth/this.dpr > this.maxWidth) ){
-            innerWidth = this.maxWidth*this.dpr;
+        if( hotrem.maxWidth && (innerWidth/hotrem.dpr > hotrem.maxWidth) ){
+            innerWidth = hotrem.maxWidth*hotrem.dpr;
         }
 
         if( !innerWidth ){ return false;}
 
-        document.documentElement.style.fontSize = ( (innerWidth/this.designWidth)*this.rootFontSize ) + 'px';
+        document.documentElement.style.fontSize = ( (innerWidth/hotrem.designWidth)*hotrem.rootFontSize ) + 'px';
 
-        this.callback && this.callback();
+        hotrem.callback && hotrem.callback();
 
     };
 
@@ -114,7 +114,8 @@
 
         //var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
 
-        window.addEventListener( 'resize' , function(){
+        window.addEventListener('resize',function(){
+            //console.log(33);
             clearTimeout( hotrem.tid );
             hotrem.tid = setTimeout( hotrem.mresize , 33 );
         } , false ); 

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit"><!-- 国产双核浏览器，启用极速模式 -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,minimal-ui" />-->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="stylesheet" type="text/css" href="node_modules/iflex/base.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/iflex/iflex.css" />
+    <style>
+        .fixedTopBar{
+            position: fixed;
+            left:0;
+            top:0;
+            width: 100%;
+            height: 2.2rem;
+            line-height: 2.2rem;
+            background-color: darkgreen;
+            z-index: 999;
+        }
+        .fixedTopBar-icon{
+            width:2.2rem;
+            height: 100%;
+            background: none;
+            border:0;
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+        }
+        .topBar-menu{
+            background-image: url(./images/menu@3x.png);
+        }
+        .topBar-menu:active{
+            background-image: url(./images/menu_pressed@3x_.png);
+        }
+        .topBar-me{
+            background-image: url(./images/me@3x.png);
+        }
+        .topBar-me:active{
+            background-image: url(./images/me_pressed@3x.png);
+        }
+        .fixedTopBar-text{
+            color: #ffffff;
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        
+
+        .listWrapper{
+            padding-top: 2.2rem;
+            padding-bottom: 1.0rem;
+        }
+        .list-item{
+            position: relative;
+            border-bottom: 1px solid #ededed;
+            border-top: 1px solid #ededed;
+            margin-bottom: 1.0rem;
+            margin-top: 1.0rem;
+        }
+        .list-item-img{
+            width: 6.2rem;
+            height: 4.75rem;
+            overflow: hidden;
+        }
+        .list-item-img img{
+            display: block;
+            max-width: none;
+            height: 100%;
+        }
+        .abstract {
+            font-size: 0.75rem;
+            line-height: 1.05rem;
+        }
+        .textOverflow {
+            
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            word-break: break-word;
+            overflow: hidden;
+        }
+        .list-item .from {
+            font-size: 0.6rem;
+            color: #9d9d9d;
+            position: absolute;
+            bottom: 0.6rem;
+        }
+        .list-item-text-wrapper{
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        
+    </style>
+    <title>hotrem test</title>
+</head>
+<body ontouchstart="">
+
+<header class="fixedTopBar">
+    <div class="" iflex="mainDir:left flexWrap:nowrap mainAlign:justify crossAlign:stretch box:justify">
+        <div>
+            <button class="fixedTopBar-icon topBar-menu">
+            </button>
+        </div>
+        <div><p class="fixedTopBar-text">影视</p></div>
+        <div>
+            <button class="fixedTopBar-icon topBar-me">
+            </button>
+        </div>
+    </div>
+
+</header>
+
+<div class="listWrapper">
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+
+    <div class="list-item" iflex="mainDir:left flexWrap:nowrap mainAlign:left crossAlign:stretch box:first">
+        <div>
+            <div class="list-item-img"><img src="./images/320.jpeg" /></div>
+        </div>
+        <div class="list-item-text-wrapper">
+            <p class="textOverflow abstract">皇马队长谈妥赞助不涂黑战靴，比C罗少赚800万！少赚800万少赚800万</p>
+            <p class="from">搜达足球</p>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script type="text/javascript" src="../hotrem.js"></script>
+<script type="text/javascript">
+
+    //引入js文件后 
+    hotrem.init({
+        //这里设置初始化参数,或者在html页面里得meta里设置
+        designWidth:640,
+        maxWidth:640,
+        rootFontSize:40
+    });
+    //执行下初始化,再执行
+    hotrem.listener();
+
+
+
+</script>
+</html>

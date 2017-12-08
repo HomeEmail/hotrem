@@ -14,6 +14,7 @@ yarn add hotrem
 
 ```
 
+### 使用
 
 或者手动复制hotrem.js到你项目里引用
 
@@ -39,4 +40,22 @@ hotrem.listener();
 <meta name="hotrem" content="design-width=640px,max-width=640px,initial-dpr=2,root-fontsize=40" />
 
 ```
+项目css里的单位使用rem，px转rem可以使用sublime插件https://github.com/flashlizi/cssrem
+
+或者使用相关的gulp和webpack打包插件，请自行搜索配置
+
+
+### 测试demo
+
+在test文件夹里，执行
+```
+yarn 
+
+```
+
+安装测试demo依赖包 iflex
+
+浏览器打开test.html就可以看到效果
+
+
 
