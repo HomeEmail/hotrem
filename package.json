@@ -1,6 +1,6 @@
 {
   "name": "hotrem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "how to use rem on webapp",
   "main": "hotrem.js",
   "scripts": {
